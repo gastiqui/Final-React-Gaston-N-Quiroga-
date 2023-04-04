@@ -47,14 +47,14 @@ const Checkout = () => {
                             <input type="text" class="form-control" id="nombre" onInput={(e) => { setNombre(e.target.value) }} />
                         </div>
                         <div class="mb-3">
-                            <label htmlFor="email" class="form-label">Email</label>
+                            <label htmlFor="email" class="form-label">E-mail</label>
                             <input type="text" class="form-control" id="email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
                         <div class="mb-3">
                             <label htmlFor="telefono" class="form-label">Teléfono</label>
                             <input type="text" class="form-control" id="telefono" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
-                        <button type="button" class="btn btn-warning" onClick={generarOrden}>Generar Orden</button>
+                        <button type="button" class="btn btn-warning" onClick={generarOrden}>Generar órden</button>
                     </form>
                 </div>
                 <div className="col-md-9">
@@ -71,7 +71,7 @@ const Checkout = () => {
                         }
                         <tr>
                             <td colSpan={2}>&nbsp;</td>
-                            <td className="text-center">Total a Pagar</td>
+                            <td className="text-center">Total a pagar:</td>
                             <td className="text-center"><b>${cartSum()}</b></td>
                         </tr>
                     </table>

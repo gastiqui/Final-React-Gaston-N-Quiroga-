@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import NavBar from "./components/NavBar";
-import PromoApp from "./components/PromoApp";
+import Newsletter from "./components/Newsletter";
 import Error404 from "./components/Error404";
 import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
@@ -25,7 +25,7 @@ function App() {
             <Route path={"/thankyou/:orderId"} element={<ThankYou />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
-          <PromoApp />
+          <Newsletter />
           <Footer />
         </div>
       </BrowserRouter>
